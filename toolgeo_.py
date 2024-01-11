@@ -85,12 +85,12 @@ def get_coordinates_and_shops(addresses, radius, show_supermarkets, show_restaur
     return m
 
 # Streamlit User Interface
-st.title("Stores and Restaurants Map")
+st.title("Open tool to trace food-borne outbreaks, identifying nearby restaurants and supermarkets.")
 st.sidebar.header("Configuration")
 
 # Configuration for circle radius and addresses
 radius = st.sidebar.slider("Circle Radius (meters)", 100, 10000, 1000)
-addresses = st.sidebar.text_area("Addresses (one per line)")
+addresses = st.sidebar.text_area("Address/es (one per line)")
 
 # Configuration for what to show on the map
 show_supermarkets = st.sidebar.checkbox("Show Supermarkets", True)
