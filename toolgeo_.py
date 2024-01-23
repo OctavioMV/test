@@ -92,6 +92,13 @@ st.sidebar.header("Configuration")
 radius = st.sidebar.slider("Circle Radius (meters)", 100, 10000, 1000)
 addresses = st.sidebar.text_area("Address/es (one per line)")
 
+# Disclaimer
+st.sidebar.info("""
+**Disclaimer: Proof of Concept Tool**
+
+This tool is a proof of concept created by the German Federal Institute of Risk Assesment (BfR) utilizing data from OpenStreetMap. It may not function perfectly or provide accurate results. The creators disclaim any responsibility for its proper functioning or the accuracy of the results it generates. Users utilize the tool at their own risk and discretion.
+""")
+
 # Configuration for what to show on the map
 show_supermarkets = st.sidebar.checkbox("Show Supermarkets", True)
 show_restaurants = st.sidebar.checkbox("Show Restaurants", True)
